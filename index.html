@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Profile 2.0 </title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Fauna+One|Sintony|Julius+Sans+One|Playfair+Display|Raleway|Shrikhand|Cormorant+Garamond|Merriweather|Roboto+Slab|Anonymous+Pro" rel="stylesheet">
+
+  <style>
+
+  body {
+    width: 100%;
+    height: 100%;
+    background:
+      url("images/pineapples-crop.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center
+  }
+
+  #home {
+    max-width: 350px;
+  }
+
+  #bio {
+    text-align: left;
+    display: none;
+    margin-top: 110px;
+  }
+
+  #development {
+    text-align: left;
+    display: none;
+    margin-top: 70px;
+  }
+
+  #product {
+    text-align: left;
+    display: none;
+  }
+
+  #contact {
+    margin-top: 130px;
+    text-align: left;
+    display: none;
+  }
+
+  #contactBox {
+    position: relative;
+    height: 420px;
+    width: 630px;
+  }
+
+#home-info {
+  text-align: center;
+}
+
+#biline {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#profile {
+  border-radius: 100%;
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -1px 1px 10px;
+  -moz-box-shadow:    -1px 1px 10px;
+  -webkit-box-shadow: -1px 1px 10px;
+}
+
+#navBar {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+/*section1 */
+
+.title {
+  margin-top: 2px;
+  font-family: 'Fauna One', serif;
+  font-size: 40px;
+  color:  #372040;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+
+.productImg {
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+.subtitle {
+
+  font-family: 'Fauna One', serif;
+  font-size: 25px;
+  color:  #372040;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.navHeading {
+  font-family:  'PT Sans Narrow', sans-serif;
+  font-size: 22px;
+  color:  #372040;
+  text-align: center;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+.selectedHeading {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 46px;
+  color:  #372040;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* section 2 */
+.section-title {
+  font-family: 'Sintony', sans-serif;
+  font-size: 60px;
+  color:  #372040;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+
+.section-subtitle {
+  font-family: 'Sintony', sans-serif;
+  font-size: 30px;
+  color:  #372040;
+  font-weight: 100;
+}
+
+  .textWall {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  color: #372040;
+  line-height: 160%;
+  }
+
+  .shadow {
+    box-shadow: 2px 7px 10px;
+    -moz-box-shadow:    2px 7px 10px;
+    -webkit-box-shadow: 2px 7px 10px;
+  }
+
+.bold {
+  font-weight: bold;
+}
+
+.faded {
+  background: rgb(217, 231, 241);
+  background: rgba(217, 231, 241, 0.9);
+  padding: 20px;
+}
+
+.fadedDev {
+  background: rgb(225, 232, 232);
+  background: rgba(225, 232, 232, 0.9);
+  padding: 20px;
+  margin: 10px;
+}
+
+.displayFlex {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+</style>
+</head>
+
+<body>
+  <!-- NavBar  -->
+  <div id="navBar" class="container">
+    <div class="row">
+      <div class="col-md-2"> <h2 id="bioLink" class="navHeading"> Bio </h2> </div>
+      <div class="col-md-2"> <h2 id="devLink" class="navHeading"> WebDev </h2> </div>
+      <div class="col-md-4"> <h2 id="homeLink" class="selectedHeading"> Nick Dousset </h2> </div>
+      <div class="col-md-2"> <h2 id="productLink" class="navHeading"> Product </h2> </div>
+      <div class="col-md-2"> <h2 id="contactLink" class="navHeading"> Contact </h2> </div>
+    </div>
+  </div>
+<!-- Landing / Homepage -->
+  <div id="home" class="container active">
+    <div class="row">
+      <div id="home-info" class="col-xs-12">
+        <p class="subtitle"> Product Manager Berlin </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="http://s21.postimg.org/olhgd6gt3/Ndousset.jpg" id="profile" class="img-responsive profileShadow" alt="Responsive image">
+      </div>
+    </div>
+    <div class="row">
+      <div id="biline" class="col-xs-12">
+        <p class="subtitle"> Explore &nbsp; Learn &nbsp; Create </p>
+      </div>
+    </div>
+  </div>
+
+<!-- Bio -->
+<div id="bio" class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">&nbsp; </div>
+    <div class="faded col-md-4 shadow">
+      <p class="textWall"> G'day, I'm Nick from Sydney, </p>
+      <p class="textWall"> In 2016 I followed my interest in tech, user experience and product to the thriving tech scene of Berlin. I'm currently a Product Manager, overseeing the development and launch of a new IOS and web app while attending as many tech, product and coding meet-ups as I can. </p>
+      <p class="textWall"> I have a passion for health, fitness and competition; I'm a representative on the Australian Ultimate Frisbee team, winning Bronze at the 2016 World Ultimate Championships. When I'm not training for or playing ultimate, I love exploring nature, skiing and developing websites. </p>
+    </div>
+    <div class="col-md-6">&nbsp; </div>
+  </div>
+</div>
+
+<!-- webDev -->
+<div id="development" class="container-fluid">
+  <div class="row">
+    <div class="col-md-7">&nbsp; </div>
+    <div class="col-md-4 fadedDev shadow">
+      <p class="textWall"> I love designing, creating and problem solving! </p>
+      <p class="textWall"> For 8 months I assisted binaere bauten's software team as a frontend development intern. I was part of a four-person team that developed a currently used app from scratch. It was such a fantastic experience contributing to a product through its complete life cycle, from concept to release. </p>
+      <p class="textWall"> Technology wise, my main focus has been HTML, CSS, Javascript & JQuery, which I've used to build this website. I have dabbled in Anjular2, XML & Typescript. </p>
+    </div>
+    <div class="col-md-1">&nbsp; </div>
+  </div>
+</div>
+
+<!-- product -->
+<div id="product" class="container-fluid displayFlex">
+  <div class="row displayFlex">
+      <div class="col-md-8 hand"> &nbsp;
+          <img class="productImg" src="images/ueberliste.png"/>
+      </div>
+      <div class="fadedDev shadow col-md-4">
+        <p class="textWall"> I've been overseeing the development and launch of überliste (pictured), a collaborative IOS and Web app designed to make shopping with and for others simple. </p>
+        <p class="textWall"> <a href="https://ueberliste.de/" style="text-decoration:none;" target="_blank"> ueberliste.de </a> </p>
+        <p class="textWall"> <a href="mailto:contact@ueberliste.de" style="text-decoration:none;" target="_blank"> contact@ueberliste.de </a> </p>
+        <p class="textWall"> <a href="https://www.instagram.com/uberliste" style="text-decoration:none;" target="_blank"> instagram.com/uberliste </a> </p>
+        <p class="textWall"> <a href="https://twitter.com/ueberiste" style="text-decoration:none;" target="_blank"> twitter.com/ueberiste </a> </p> <br /> <br />
+        <p align="center" width="50%"> <img src="https://image.ibb.co/mhpbok/logo.png" alt="Logo" border="0" width="229px" height="86px" style="display:block" /></p>
+
+      </div>
+      <div class="col-md-2">&nbsp; </div>
+  </div>
+</div>
+
+
+<div id="contact" class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">&nbsp;</div>
+    <div class="col-md-3 shadow fadedDev">
+      <p class="textWall"> Nick Dousset </p>
+      <p class="textWall"> Product Manager </p>
+      <p class="textWall"> binaere-bautuen, Berlin, Germany </p>
+      <p class="textWall"> <a href="https://ndousset.github.io/" style="text-decoration:none;" target="_blank"> ndousset.github.io </a> </p>
+      <p class="textWall"> <a href="mailto:contact@ueberliste.de" style="text-decoration:none;" target="_blank"> nick.dousset@binaere-bauten.de </a> </p>
+      <p class="textWall"> <a href="https://www.linkedin.com/in/nicholas-dousset/" style="text-decoration:none;" target="_blank"> linkedin.com/in/nicholas-dousset/ </a> </p>
+      <p class="textWall"> <a href="https://twitter.com/Nick_Dousset" style="text-decoration:none;" target="_blank"> twitter.com/Nick_Dousset </a> </p> <br />
+    </div>
+    <div class="col-md-5">&nbsp;</div>
+  </div>
+</div>
+
+
+
+
+</body>
+<script>
+
+$(document).ready(function(){
+
+  $(".navHeading, .selectedHeading").hover(function() {
+    $(this).addClass("bold");
+  }, function() {
+    $(this).removeClass("bold");
+    }
+  );
+
+  $("#homeLink").click(function(){
+    $("#devLink, #productLink, #contactLink, #bioLink").animate({"font-size":"22px"});
+    $("#homeLink").animate({"font-size":"46px"});
+    $("#home, #bio, #development, #product, #contact").hide(200);
+    $("#home").show(300);
+    $("body").css("background-image" , "url(images/pineapples-crop.jpg)");
+    }
+  );
+
+  $("#bioLink").click(function(){
+    $("#devLink, #productLink, #contactLink, #homeLink").animate({"font-size":"22px"});
+    $("#bioLink").animate({"font-size":"46px"});
+    $("#home, #bio, #development, #product, #contact").hide(200);
+    $("#bio").show(300);
+    $("body").css("background-image" , "url(https://s11.postimg.org/d35hanypf/DSC_0230.jpg");
+    }
+  );
+
+  $("#devLink").click(function(){
+    $("#homeLink, #productLink, #contactLink, #bioLink").animate({"font-size":"22px"});
+    $("#devLink").animate({"font-size":"46px"});
+    $("#home, #bio, #development, #product, #contact").hide(200);
+    $("#development").show(300);
+    $("body").css("background-image" , "url(images/steep.jpg)");
+    }
+  );
+
+  $("#productLink").click(function(){
+    $("#homeLink, #devLink, #contactLink, #bioLink").animate({"font-size":"22px"});
+    $("#productLink").animate({"font-size":"46px"});
+    $("#home, #bio, #development, #product, #contact").hide(200);
+    $("#product").show(300);
+    $("body").css("background-image" , "url(https://s4.postimg.org/czjgu2ov1/sky.jpg)");
+
+    }
+  );
+
+  $("#contactLink").click(function(){
+    $("#homeLink, #devLink, #productLink, #bioLink").animate({"font-size":"22px"});
+    $("#contactLink").animate({"font-size":"46px"});
+    $("#home, #bio, #development, #product, #contact").hide(200);
+    $("#contact").show(300);
+    $("body").css("background-image" , "url(images/outside.jpg)");
+    }
+  );
+});
+</script>
+</html>
