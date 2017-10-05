@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  // $("body").css("background-image" , "url(images/pineapples.jpg)");
 
   $(".navHeading, .selectedHeading").hover(function() {
     $(this).addClass("bold");
