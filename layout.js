@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("body").css("background-image" , "url(https://s11.postimg.org/d35hanypf/DSC_0230.jpg");
 
   $(".navHeading, .selectedHeading").hover(function() {
     $(this).addClass("bold");
