@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("body").css("background-image" , "url(images/pineapples-crop.jpg)");
+  // $("body").css("background-image" , "url(images/pineapples.jpg)");
 
   $(".navHeading, .selectedHeading").hover(function() {
     $(this).addClass("bold");
@@ -13,7 +13,7 @@ $(document).ready(function(){
     $("#homeLink").animate({"font-size":"46px"});
     $("#home, #bio, #development, #product, #contact").hide(200);
     $("#home").show(300);
-    $("body").css("background-image" , "url(images/pineapples-crop.jpg)");
+    $("body").css("background-image" , "url(images/pineapples.jpg)");
     }
   );
 
@@ -22,7 +22,7 @@ $(document).ready(function(){
     $("#bioLink").animate({"font-size":"46px"});
     $("#home, #bio, #development, #product, #contact").hide(200);
     $("#bio").show(300);
-    $("body").css("background-image" , "url(images/explore.jpg)");
+    $("body").css("background-image" , "url(images/explore.JPG)");
     }
   );
 
