@@ -17,13 +17,13 @@ body {
   #bio {
     text-align: left;
     display: none;
-    margin-top: 110px;
+    margin-top: 40px;
   }
 
   #development {
     text-align: left;
     display: none;
-    margin-top: 70px;
+    margin-top: 40px;
   }
 
   #product {
@@ -32,7 +32,7 @@ body {
   }
 
   #contact {
-    margin-top: 130px;
+    margin-top: 40px;
     text-align: left;
     display: none;
   }
@@ -128,9 +128,18 @@ body {
 
   .textWall {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   color: #372040;
-  line-height: 160%;
+  line-height: 150%;
+  padding: 50px;
+  }
+
+  .productTextWall {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 22px;
+  color: #372040;
+  line-height: 150%;
+  padding: 45px 50px 0px 50px;
   }
 
   .shadow {
@@ -146,14 +155,12 @@ body {
 .faded {
   background: rgb(217, 231, 241);
   background: rgba(217, 231, 241, 0.9);
-  padding: 20px;
 }
 
 .fadedDev {
   background: rgb(225, 232, 232);
   background: rgba(225, 232, 232, 0.9);
-  padding: 20px;
-  margin: 10px;
+
 }
 
 .displayFlex {
