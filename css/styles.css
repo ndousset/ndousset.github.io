@@ -29,6 +29,7 @@ body {
   }
 
   #product {
+    margin-top: 40px;
     text-align: left;
     display: none;
   }
@@ -56,16 +57,18 @@ body {
 
 #profile {
   border-radius: 100%;
-  max-width: 250px;
+  max-width: 300px;
   display: block;
-  margin: auto auto;
+  margin: 20px auto auto;
   box-shadow: -1px 1px 10px;
   -moz-box-shadow:    -1px 1px 10px;
   -webkit-box-shadow: -1px 1px 10px;
 }
 
 #navBar {
-  margin-top: 5px;
+margin-top: 5px;
+padding-bottom: 5px;
+border-bottom: 0.5px solid currentColor;
 }
 
 /*section1 */
@@ -96,7 +99,7 @@ body {
 
 .navHeading {
   font-family:  'PT Sans Narrow', sans-serif;
-  font-size: 22px;
+  font-size: 30px;
   color:  #372040;
   text-align: center;
   cursor: pointer;
@@ -105,7 +108,7 @@ body {
 
 .selectedHeading {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 46px;
+  font-size: 50px;
   color:  #372040;
   text-align: center;
   cursor: pointer;
