@@ -58,7 +58,7 @@ body {
   border-radius: 100%;
   max-width: 250px;
   display: block;
-
+  margin: 50px auto auto;
 
   box-shadow: -1px 1px 10px;
   -moz-box-shadow:    -1px 1px 10px;
